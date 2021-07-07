@@ -1,0 +1,139 @@
+* {
+  text-align: center;
+  font-family: 'Source Code Pro', monospace; /*Font I uploaded from Google fonts*/
+  color: white; /*Should contrast with black background*/
+  background-color: black;
+  scroll-behavior: smooth; /*I will need this when I hyperlink between sections/elements so it is smooth scrolling rather that teleport*/
+}
+html::-webkit-scrollbar {
+  display: none; /*Hides scrollbar without disabling scrolling*/
+}
+.projectContainer {                 /* Set width of cards */
+  border: 2px solid white;    /* Set up Border */
+  border-radius: 15px;      
+  width: 350px;     /* Slightly Curve edges */
+  overflow: hidden;  
+  color: black;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  word-wrap: break-word;    
+  height: 250px;  
+}
+#myname {
+  display: inline;
+}
+#em {
+  font-size: 50px;
+  animation: wiggle 2.5s infinite;
+}
+@keyframes wiggle {
+	0% { transform: rotate(0deg); }
+	70% { transform: rotate(0deg); }
+	75% { transform: rotate(5deg); }
+	80% { transform: rotate(-5deg); }
+	85% { transform: rotate(5deg); }
+	95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.uparrow {
+  transform: rotate(180deg)
+}
+.projectContainer:hover {
+  transform-style: size;
+}
+.pp {
+  display: inline-flex;
+}
+a {
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+  color: blueviolet;
+}
+button#notmenu {
+  border-radius: 10px;
+}
+.arrow, .uparrow, .loc, .projectContainer {
+  transition: all .2s ease-in-out; 
+}
+.arrow:hover,.loc:hover {
+  transform: scale(1.1); 
+}
+a:active {
+  color: orangered;
+}
+h1 {
+  color: white;
+}
+#myname {
+  font-size: 50px;
+}
+#whatido {
+  font-size: 40px;
+}
+span {
+  display: flex;
+  text-align: center;
+}
+a button /*Hyperlink buttons*/{
+  font-family: 'Source Code Pro', monospace;;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  font-size: 35px;
+  background-color: black;
+}
+#navbar /*Navigation bar*/{
+  text-align: left;
+  font-family: 'Source Code Pro', monospace;;
+  background-color: black;
+  color: white;
+  outline: 2px solid white;
+}
+#notmenu {/*basically the button on the bottom that links to the #navbar element*/
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  outline: 0px solid black;
+  text-decoration: none;
+  text-decoration-color: white; 
+}
+#p, #tut, #loc {
+  font-size: 30px;
+}
+a button:hover, a button#notmenu:hover { /*onhover for the hyperlink buttons*/
+  outline: 2px solid black;
+  color: black; 
+  background-color: white;
+  text-decoration: none;  
+}
+.hiddenlink { /*scratch and replit links at where to find me section*/
+  color: white;
+  text-decoration: none;
+}
+img {
+  margin-left: 10px;
+}
+.h2, .h2t {
+  color: white;
+  background-color: black;
+}
+.h2t {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid white;
+}
+.loc {
+  border-radius: 10px;
+  border: 0.5px solid white;
+  width: 250px;
+  height: 100px;
+  word-wrap: break-word;
+  background-color: black;
+}
