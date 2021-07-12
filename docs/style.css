@@ -24,8 +24,8 @@ html::-webkit-scrollbar {
 }
 #em {
   font-size: 50px;
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
   animation: wiggle 2.5s infinite;
 }
 @keyframes wiggle {
