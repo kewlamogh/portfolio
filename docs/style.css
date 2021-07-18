@@ -1,141 +1,127 @@
 * {
   text-align: center;
-  font-family: 'Source Code Pro', monospace; /*Font I uploaded from Google fonts*/
-  color: white; /*Should contrast with black background*/
+  overflow-x: hidden;
+  color: white;
   background-color: black;
-  scroll-behavior: smooth; /*I will need this when I hyperlink between sections/elements so it is smooth scrolling rather that teleport*/
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
-html::-webkit-scrollbar {
-  display: none; /*Hides scrollbar without disabling scrolling*/
+body {
+  background-color: black;
 }
-.projectContainer {                 /* Set width of cards */
-  border: 2px solid white;    /* Set up Border */
-  border-radius: 15px;      
-  width: 350px;     /* Slightly Curve edges */
-  overflow: hidden;  
-  color: black;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-  word-wrap: break-word;    
-  height: 250px;  
+hr {
+  background-color: teal;
+  width: 150px;
+  border: none;
+  height: 1px;
+  margin-top: 10px;
+
 }
-#myname {
-  display: inline;
+.navbar {
+  top: -10px;
+  position:fixed;
+  font-size:30px;
+  width: 150000000px;
+  overflow-y: hidden;
+  height: 70px;
+  background-color: rgb(36, 37, 87);
+  display: flex;
 }
-#em {
-  font-size: 50px;
-  width: 0px;
-  height: 0px;
-  animation: wiggle 2.5s infinite;
+.down_arrow {
+  width: 20px;
+  height: 20px;
+  animation: yeet 2s infinite;
+  cursor: pointer;
 }
-@keyframes wiggle {
-	0% { transform: rotate(0deg); }
-	70% { transform: rotate(0deg); }
-	75% { transform: rotate(5deg); }
-	80% { transform: rotate(-5deg); }
-	85% { transform: rotate(5deg); }
-	95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
 }
 
-.uparrow {
-  transform: rotate(180deg)
+body::-webkit-scrollbar-track {
+  background: darkgray;        /* color of the tracking area */
 }
-.projectContainer:hover {
-  transform-style: size;
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border: none;  /* creates padding around scroll thumb */
 }
-.pp {
-  display: inline-flex;
+@keyframes yeet {
+  50% {
+    filter: brightness(50%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
 }
-a {
-  margin: 5px 5px 5px 5px;
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size:48px;
+  border:none;
+  overflow: hidden;
+  transition: color ease-in 0.5s;
+  background-color: rgb(36, 37, 87);
   text-decoration: none;
-  color: blueviolet;
 }
-button#notmenu {
-  border-radius: 10px;
-}
-.arrow, .uparrow, .loc, .projectContainer {
-  transition: all .2s ease-in-out; 
-}
-.arrow:hover,.loc:hover {
-  transform: scale(1.1); 
-}
-a:active {
-  color: orangered;
+button:hover {
+  color: white;
+  background-color: rgb(73, 74, 131);
 }
 h1 {
-  color: white;
+  font-size: 50px; 
 }
-#myname {
-  font-size: 50px;
-}
-#whatido {
-  font-size: 40px;
-}
-span {
-  display: flex;
-  text-align: center;
-}
-a button /*Hyperlink buttons*/{
-  font-family: 'Source Code Pro', monospace;;
-  text-decoration: none;
-  text-align: left;
-  color: white;
-  font-size: 35px;
-  background-color: black;
-}
-#navbar /*Navigation bar*/{
-  text-align: left;
-  font-family: 'Source Code Pro', monospace;;
-  background-color: black;
-  color: white;
-  outline: 2px solid white;
-}
-#notmenu {/*basically the button on the bottom that links to the #navbar element*/
-  text-align: left;
-  color: white;
-  font-size: 25px;
-  background-color: black;
-  outline: 0px solid black;
-  text-decoration: none;
-  text-decoration-color: white; 
-}
-#p, #tut, #loc {
+h2 {
   font-size: 30px;
 }
-a button:hover, a button#notmenu:hover { /*onhover for the hyperlink buttons*/
-  outline: 2px solid black;
-  color: black; 
-  background-color: white;
-  text-decoration: none;  
-}
-.hiddenlink { /*scratch and replit links at where to find me section*/
+.background_1, .background_2 {
   color: white;
+  width: 1500px;
+  height: 1000px;
+  margin-bottom: 0px;
+}
+.background_3 {
+  height: 750px;
+}
+.background_2 {
+  background-color: black;
+}
+.line {
+  display: inline-flex;
+}
+.repl {
+  width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  border: 2px solid white;
+  font-size: 20px;
+  word-break: break-word;
+  margin: 10px;
+}
+.repl:hover {
+  box-shadow: 10px white;
+}
+/*changing a:hover*/
+@keyframes changeColor {
+  0% {color: white; text-decoration-color: white;}
+  100% {color: blue; text-decoration-color: blue}
+}
+a {
+  color:white;
+  margin-top: 10px; 
+  text-decoration-color:white; 
+  font-size: 40px;
+  overflow: hidden;
   text-decoration: none;
 }
-img {
-  margin-left: 10px;
+a:hover {
+  animation: changeColor 0.5s;
+  color: blue; 
+  text-decoration-color: blue;
 }
-.h2, .h2t {
-  color: white;
-  background-color: black;
-}
-.h2t {
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border: 1px solid white;
-}
-.loc {
-  border-radius: 10px;
-  border: 0.5px solid white;
-  width: 250px;
-  height: 100px;
-  word-wrap: break-word;
-  background-color: black;
+.link {
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 30px; 
+  width: 300px;
+  margin-right: 30px;
 }
