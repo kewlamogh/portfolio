@@ -115,6 +115,7 @@ a {
 a:hover {
   animation: changeColor 0.5s;
   color: blue; 
+  text-decoration: underline;
   text-decoration-color: blue;
 }
 .link {
