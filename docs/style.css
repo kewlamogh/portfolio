@@ -100,10 +100,6 @@ h2 {
   box-shadow: 10px white;
 }
 /*changing a:hover*/
-@keyframes changeColor {
-  0% {color: white; text-decoration-color: white;}
-  100% {color: blue; text-decoration-color: blue}
-}
 a {
   color:white;
   margin-top: 10px; 
@@ -113,7 +109,6 @@ a {
   text-decoration: none;
 }
 a:hover {
-  animation: changeColor 0.5s;
   color: blue; 
   text-decoration: underline;
   text-decoration-color: blue;
