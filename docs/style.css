@@ -123,9 +123,8 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: blue; 
   text-decoration: underline;
-  text-decoration-color: blue;
+  text-decoration-color: white;
 }
 .link {
   height: 200px;
