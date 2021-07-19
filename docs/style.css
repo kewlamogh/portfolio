@@ -27,6 +27,14 @@ hr {
   background-color: rgb(36, 37, 87);
   display: flex;
 }
+
+.no-back {
+  background-color: transparent;
+}
+.background_1 {
+	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+  background-size: 1500px 900px;
+}
 .down_arrow {
   width: 20px;
   height: 20px;
