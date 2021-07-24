@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 button {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size:48px;
   border:none;
   overflow: hidden;
@@ -124,7 +124,12 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: blue;
+  color: blue;
+}
+small {
+  font-size: 22px;
+  margin-top: 5px;  
 }
 .link {
   height: 200px;
