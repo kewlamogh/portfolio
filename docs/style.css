@@ -69,7 +69,8 @@ body::-webkit-scrollbar-thumb {
 }
 button {
   font-family: 'Josefin Sans', sans-serif;
-  font-size:48px;
+  padding-top: 3px;
+  font-size:55px;
   border:none;
   overflow: hidden;
   transition: color ease-in 0.5s;
