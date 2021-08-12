@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
 * {
   text-align: center;
   overflow-x: hidden;
   color: white;
   background-color: black;
   scroll-behavior: smooth;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Pontano Sans', sans-serif;
 }
 body {
   background-color: black;
