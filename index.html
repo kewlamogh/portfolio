@@ -59,22 +59,40 @@
             font-size: 1rem;
         }
 
+        /* === Projects Section === */
+        .projects-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .projects-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-align: center;
+        }
+
         /* === Project Grid === */
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .card {
-            background: #161b22;
+            background: #0d1117;
             border: 1px solid #30363d;
             border-radius: 12px;
             padding: 1.5rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -91,11 +109,13 @@
         .card p {
             color: #9ca3af;
             margin-bottom: 1.2rem;
+            flex-grow: 1;
         }
 
         .buttons {
             display: flex;
             gap: 0.6rem;
+            margin-top: auto;
         }
 
         .btn {
@@ -154,52 +174,56 @@
         </p>
     </section>
 
-    <section class="projects">
-        <div class="card">
-            <h2>KidGo</h2>
-            <p>Safe, voice-based social media for kids.</p>
-            <div class="buttons">
-                <button class="btn btn-primary" onclick="readMore(1)">Read More</button>
+    <section class="projects-section">
+        <h2>My Favorite Projects</h2>
+        
+        <div class="projects">
+            <div class="card">
+                <h2>KidGo</h2>
+                <p>Safe, voice-based social media for kids.</p>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="readMore(1)">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>Sentescope</h2>
-            <p>Mood-matching music player powered by AWS Rekognition & Spotify.</p>
-            <div class="buttons">
-                <button class="btn btn-primary" onclick="readMore(2)">Read More</button>
+            <div class="card">
+                <h2>Sentescope</h2>
+                <p>Mood-matching music player powered by AWS Rekognition & Spotify.</p>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="readMore(2)">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>Zombs: Apocalypse</h2>
-            <p>A fast-paced top-down zombie shooter.</p>
-            <div class="buttons">
-                <button class="btn btn-primary" onclick="readMore(3)">Read More</button>
+            <div class="card">
+                <h2>Zombs: Apocalypse</h2>
+                <p>A fast-paced top-down zombie shooter.</p>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="readMore(3)">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>Susbot</h2>
-            <p>Sustainability-focused AI, built for a hackathon. LLMs for good.</p>
-            <div class="buttons">
-                <button class="btn btn-primary" onclick="readMore(4)">Read More</button>
+            <div class="card">
+                <h2>Susbot</h2>
+                <p>Sustainability-focused AI, built for a hackathon. LLMs for good.</p>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="readMore(4)">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>Tevolution</h2>
-            <p>String-based evolution by natural selection. (Be sure to read the doc for more technical details.) </p>
-            <div class="buttons">
-                <button class="btn btn-primary" onclick="readMore(5)">Read More</button>
+            <div class="card">
+                <h2>Tevolution</h2>
+                <p>String-based evolution by natural selection. (Be sure to read the doc for more technical details.) </p>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="readMore(5)">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>Moonlink</h2>
-            <p>Scalable, decentralized P2P communication built for lunar colonizers.</p>
-            <div class="buttons">
-                <button class="btn btn-primary" onclick="readMore(6)">Read More</button>
+            <div class="card">
+                <h2>Moonlink</h2>
+                <p>Scalable, decentralized P2P communication built for lunar colonizers.</p>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="readMore(6)">Read More</button>
+                </div>
             </div>
         </div>
     </section>
