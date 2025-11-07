@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amogh | Developer Portfolio</title>
+    <style>
+        /* === Reset & Base Styles === */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", system-ui, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        header p {
+            color: #9ca3af;
+            font-size: 1.1rem;
+        }
+
+        /* === About Section === */
+        .about {
+            max-width: 800px;
+            margin: 2rem auto 3rem auto;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .about h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .about p {
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+
+        /* === Project Grid === */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+
+        .card p {
+            color: #9ca3af;
+            margin-bottom: 1.2rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            border: none;
+            padding: 0.6rem 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #238636;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #2ea043;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #30363d;
+            color: #e6edf3;
+        }
+
+        .btn-secondary:hover {
+            background: #3c444d;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Amogh</h1>
+        <p>Developer • Builder • Problem Solver</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hey! I'm Amogh — a developer who enjoys building cool solutions to real-world problems.
+            I love programming in Go and use AWS services a lot. Like, way too much. When I'm not
+            coding, you'll probably find me playing the Halo games on my Xbox.
+        </p>
+    </section>
+
+    <section class="projects">
+        <div class="card">
+            <h2>KidGo</h2>
+            <p>Safe, voice-based social media for kids.</p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="readMore(1)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Sentescope</h2>
+            <p>Mood-matching music player powered by AWS Rekognition & Spotify.</p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="readMore(2)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Zombs: Apocalypse</h2>
+            <p>A fast-paced top-down zombie shooter.</p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="readMore(3)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Susbot</h2>
+            <p>Sustainability-focused AI, built for a hackathon. LLMs for good.</p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="readMore(4)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Tevolution</h2>
+            <p>String-based evolution by natural selection. (Be sure to read the doc for more technical details.) </p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="readMore(5)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Moonlink</h2>
+            <p>Scalable, decentralized P2P communication built for lunar colonizers.</p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="readMore(6)">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Amogh — Crafted with focus and midnight code.
+    </footer>
+
+    <script>
+        function readMore(id) {
+            let links = [
+                "https://docs.google.com/document/d/1Rue595RAqLyQt8K5I80lQn7Ltqi8WHKIk3c-8rYLWJA/edit?usp=sharing", // kidgo
+                "https://docs.google.com/document/d/13f--ufi7JNITwFzC_Ivz9atmRB-xc6OgUCzmm1ifQNI/edit?usp=sharing", // sentescope
+                "https://docs.google.com/document/d/1grKSTLIH-uto7sN8xXHrrBVSupWDc_QuUNDmgdHeIkQ/edit?usp=sharing", // zombs
+                "https://docs.google.com/document/d/170r1_XJnZTUFkq50q2jyInRDzyKhLA9odHDrbwtMb_I/edit?usp=sharing", // susbot
+                "https://docs.google.com/document/d/1WnKJuVQM0q36Yxxe8cTJ0sTjO6Z5LdTLmQe903hSpjc/edit?usp=sharing", // tevolution
+                "https://devpost.com/software/moonlink", // moonlink
+            ]
+
+            let index = id - 1
+
+            console.log("gang")
+            window.open(links[index])
+        }
+    </script>
+</body>
+
+</html>
